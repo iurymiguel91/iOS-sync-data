@@ -1,0 +1,6 @@
+framework module Pods_SyncDataTests {
+  umbrella header "Pods-SyncDataTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
