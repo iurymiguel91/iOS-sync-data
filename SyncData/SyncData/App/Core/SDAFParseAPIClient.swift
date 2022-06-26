@@ -8,11 +8,11 @@
 import Alamofire
 import Foundation
 
-protocol HasSDAFParseAPIClient: AnyObject {
+protocol HasSDAFParseAPIClient {
     var parseAPIClient: SDAFParseAPIClientProtocol { get }
 }
 
-protocol SDAFParseAPIClientProtocol: AnyObject {
+protocol SDAFParseAPIClientProtocol {
     func getRequestFor(class className: String, parameters: Parameters?) -> DataRequest
     func getRequestForAllRecords(ofClass className: String, updatedAfterDate updatedDate: Date?) -> DataRequest
 }

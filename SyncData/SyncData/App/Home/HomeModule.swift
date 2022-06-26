@@ -8,7 +8,8 @@
 struct HomeModule {
     static func makeHomeViewController(coordinator: MainFlowDelegate,
                                        dependencies: AppDependencies) -> HomeViewController {
-        let holidayService = HolidayService(parseAPIClient: dependencies.parseAPIClient)
+        let holidayService = HolidayService(parseAPIClient: dependencies.parseAPIClient,
+                                            jsonDecoder: dependencies.jsonDecoder)
         let presenter = HomePresenter(coordinator: coordinator, holidayService: holidayService)
         return HomeViewController(presenter: presenter)
     }

@@ -6,6 +6,7 @@
 //
 
 import Alamofire
+import CoreData
 
 struct MainModule {
     static func makeHttpClient() -> HttpClientProtocol {
@@ -19,5 +20,15 @@ struct MainModule {
 
     static func makeParseAPIClient(httpClient: HttpClientProtocol) -> SDAFParseAPIClientProtocol {
         SDAFParseAPIClient(httpClient: httpClient)
+    }
+    
+    static func makePersistentContainer() -> PersistentContainer {
+        let container = PersistentContainer(name: "SyncData")
+        container.loadPersistentStores { description, error in
+            if let error = error {
+                fatalError("Unable to load persistent stores: \(error)")
+            }
+        }
+        return container
     }
 }

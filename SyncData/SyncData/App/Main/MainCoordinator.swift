@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol MainFlowDelegate: AnyObject {
+protocol MainFlowDelegate {
     func navigate()
 }
 

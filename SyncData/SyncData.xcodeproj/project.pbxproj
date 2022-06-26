@@ -9,14 +9,19 @@
 /* Begin PBXBuildFile section */
 		38A9D59167EC772F13C4C51A /* Pods_SyncDataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7248D51464CFE6F33A0F123C /* Pods_SyncDataTests.framework */; };
 		9DB466ECFFC04F40A9F387B5 /* Pods_SyncData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576E906824503E0285B56A9A /* Pods_SyncData.framework */; };
+		A133D30E2861383D008036DA /* SDSyncEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A133D30D2861383D008036DA /* SDSyncEngine.swift */; };
 		A14E09E0285FEC5800A97029 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E09DF285FEC5800A97029 /* HttpClient.swift */; };
 		A14E09E2285FF34600A97029 /* MainModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E09E1285FF34600A97029 /* MainModule.swift */; };
 		A14E09E4285FF4AB00A97029 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E09E3285FF4AB00A97029 /* AppDependencies.swift */; };
-		A14E09E8285FF6CA00A97029 /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E09E7285FF6CA00A97029 /* Holiday.swift */; };
 		A14E09EB285FFA0A00A97029 /* HolidayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E09EA285FFA0A00A97029 /* HolidayService.swift */; };
 		A14E09ED285FFC2A00A97029 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E09EC285FFC2A00A97029 /* Cancellable.swift */; };
 		A14E09EF2860018E00A97029 /* ParseAPIResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E09EE2860018E00A97029 /* ParseAPIResults.swift */; };
 		A14E09F12860070100A97029 /* SDAFParseAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E09F02860070100A97029 /* SDAFParseAPIClient.swift */; };
+		A15694BE2866AB91002AE67B /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15694BD2866AB91002AE67B /* PersistentContainer.swift */; };
+		A1BBE2742866820A000E9562 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBE2732866820A000E9562 /* Class.swift */; };
+		A1BBE27B286682F2000E9562 /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBE279286682F2000E9562 /* Holiday.swift */; };
+		A1BBE28128668BE3000E9562 /* CodingUserInfoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBE28028668BE3000E9562 /* CodingUserInfoKey.swift */; };
+		A1BBE28328668CE5000E9562 /* DecoderConfigurationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBE28228668CE5000E9562 /* DecoderConfigurationError.swift */; };
 		A1EAD775285FBF43007AAA28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EAD774285FBF43007AAA28 /* AppDelegate.swift */; };
 		A1EAD777285FBF43007AAA28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EAD776285FBF43007AAA28 /* SceneDelegate.swift */; };
 		A1EAD779285FBF43007AAA28 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EAD778285FBF43007AAA28 /* HomeViewController.swift */; };
@@ -56,14 +61,19 @@
 		7374CADEE7FCBA21025DCB02 /* Pods-SyncData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyncData.debug.xcconfig"; path = "Target Support Files/Pods-SyncData/Pods-SyncData.debug.xcconfig"; sourceTree = "<group>"; };
 		73B20B2B8E5A07FF94F8789C /* Pods-SyncDataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyncDataTests.debug.xcconfig"; path = "Target Support Files/Pods-SyncDataTests/Pods-SyncDataTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8754DDF3FE55BE8188BD1AE2 /* Pods-SyncData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyncData.release.xcconfig"; path = "Target Support Files/Pods-SyncData/Pods-SyncData.release.xcconfig"; sourceTree = "<group>"; };
+		A133D30D2861383D008036DA /* SDSyncEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDSyncEngine.swift; sourceTree = "<group>"; };
 		A14E09DF285FEC5800A97029 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		A14E09E1285FF34600A97029 /* MainModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModule.swift; sourceTree = "<group>"; };
 		A14E09E3285FF4AB00A97029 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
-		A14E09E7285FF6CA00A97029 /* Holiday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holiday.swift; sourceTree = "<group>"; };
 		A14E09EA285FFA0A00A97029 /* HolidayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayService.swift; sourceTree = "<group>"; };
 		A14E09EC285FFC2A00A97029 /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
 		A14E09EE2860018E00A97029 /* ParseAPIResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseAPIResults.swift; sourceTree = "<group>"; };
 		A14E09F02860070100A97029 /* SDAFParseAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDAFParseAPIClient.swift; sourceTree = "<group>"; };
+		A15694BD2866AB91002AE67B /* PersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainer.swift; sourceTree = "<group>"; };
+		A1BBE2732866820A000E9562 /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
+		A1BBE279286682F2000E9562 /* Holiday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holiday.swift; sourceTree = SOURCE_ROOT; };
+		A1BBE28028668BE3000E9562 /* CodingUserInfoKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingUserInfoKey.swift; sourceTree = "<group>"; };
+		A1BBE28228668CE5000E9562 /* DecoderConfigurationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderConfigurationError.swift; sourceTree = "<group>"; };
 		A1EAD771285FBF43007AAA28 /* SyncData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SyncData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EAD774285FBF43007AAA28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1EAD776285FBF43007AAA28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +140,8 @@
 				A14E09DF285FEC5800A97029 /* HttpClient.swift */,
 				A14E09E3285FF4AB00A97029 /* AppDependencies.swift */,
 				A14E09F02860070100A97029 /* SDAFParseAPIClient.swift */,
+				A133D30D2861383D008036DA /* SDSyncEngine.swift */,
+				A15694BD2866AB91002AE67B /* PersistentContainer.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -147,8 +159,9 @@
 		A14E09E6285FF6BD00A97029 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A14E09E7285FF6CA00A97029 /* Holiday.swift */,
+				A1BBE279286682F2000E9562 /* Holiday.swift */,
 				A14E09EE2860018E00A97029 /* ParseAPIResults.swift */,
+				A1BBE2732866820A000E9562 /* Class.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -159,6 +172,15 @@
 				A14E09EA285FFA0A00A97029 /* HolidayService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		A1BBE27F28668BD1000E9562 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A1BBE28028668BE3000E9562 /* CodingUserInfoKey.swift */,
+				A1BBE28228668CE5000E9562 /* DecoderConfigurationError.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		A1EAD768285FBF43007AAA28 = {
@@ -216,6 +238,7 @@
 		A1EAD7A7285FBF5D007AAA28 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				A1BBE27F28668BD1000E9562 /* Helpers */,
 				A14E09E9285FF9FE00A97029 /* Services */,
 				A14E09E6285FF6BD00A97029 /* Models */,
 				A14E09E5285FF53E00A97029 /* Main */,
@@ -488,18 +511,23 @@
 				A1EAD7AE285FC0C4007AAA28 /* HomePresenter.swift in Sources */,
 				A14E09EB285FFA0A00A97029 /* HolidayService.swift in Sources */,
 				A14E09ED285FFC2A00A97029 /* Cancellable.swift in Sources */,
+				A1BBE28328668CE5000E9562 /* DecoderConfigurationError.swift in Sources */,
 				A14E09E4285FF4AB00A97029 /* AppDependencies.swift in Sources */,
 				A1EAD77F285FBF43007AAA28 /* SyncData.xcdatamodeld in Sources */,
 				A14E09F12860070100A97029 /* SDAFParseAPIClient.swift in Sources */,
+				A1BBE27B286682F2000E9562 /* Holiday.swift in Sources */,
+				A1BBE2742866820A000E9562 /* Class.swift in Sources */,
 				A1EAD7B0285FC24B007AAA28 /* HomeModule.swift in Sources */,
 				A1EAD7AB285FBF90007AAA28 /* MainCoordinator.swift in Sources */,
 				A14E09E0285FEC5800A97029 /* HttpClient.swift in Sources */,
 				A1EAD779285FBF43007AAA28 /* HomeViewController.swift in Sources */,
+				A15694BE2866AB91002AE67B /* PersistentContainer.swift in Sources */,
 				A1EAD7A9285FBF69007AAA28 /* Coordinator.swift in Sources */,
+				A133D30E2861383D008036DA /* SDSyncEngine.swift in Sources */,
 				A1EAD775285FBF43007AAA28 /* AppDelegate.swift in Sources */,
 				A14E09E2285FF34600A97029 /* MainModule.swift in Sources */,
-				A14E09E8285FF6CA00A97029 /* Holiday.swift in Sources */,
 				A14E09EF2860018E00A97029 /* ParseAPIResults.swift in Sources */,
+				A1BBE28128668BE3000E9562 /* CodingUserInfoKey.swift in Sources */,
 				A1EAD777285FBF43007AAA28 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

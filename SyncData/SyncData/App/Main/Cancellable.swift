@@ -7,7 +7,7 @@
 
 import Alamofire
 
-protocol Cancellable: AnyObject {
+protocol Cancellable {
     func cancelOperation()
 }
 

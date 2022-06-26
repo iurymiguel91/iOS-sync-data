@@ -62,8 +62,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     private func getDependencies() -> AppDependencies {
         let httpClient = MainModule.makeHttpClient()
         let parseAPIClient = MainModule.makeParseAPIClient(httpClient: httpClient)
+        let persistentContainer = MainModule.makePersistentContainer()
         return AppDependencies(httpClient: httpClient,
-                               parseAPIClient: parseAPIClient)
+                               parseAPIClient: parseAPIClient,
+                               persistentContainer: persistentContainer)
     }
 }
 

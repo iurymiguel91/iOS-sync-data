@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol HomePresenterProtocol: AnyObject {
+protocol HomePresenterProtocol {
     func getHolidays()
 }
 
@@ -22,8 +22,7 @@ class HomePresenter: HomePresenterProtocol {
     }
 
     func getHolidays() {
-        let date = Date()
-        holidayService.getHolidays(after: date) { result in
+        holidayService.getHolidays(parameters: nil) { result in
             switch result {
             case .success(let data):
                 print(data.results)

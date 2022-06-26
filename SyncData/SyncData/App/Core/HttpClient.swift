@@ -11,7 +11,7 @@ protocol HasHttpClient {
     var httpClient: HttpClientProtocol { get }
 }
 
-protocol HttpClientProtocol: AnyObject {
+protocol HttpClientProtocol {
     func requestGet(urlSuffix: String, parameters: Parameters?) -> DataRequest
 }
 
