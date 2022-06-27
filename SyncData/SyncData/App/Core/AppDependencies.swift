@@ -7,7 +7,10 @@
 
 import CoreData
 
-typealias GeneralDependencies = HasHttpClient & HasSDAFParseAPIClient
+typealias GeneralDependencies = HasHttpClient &
+                                HasSDAFParseAPIClient &
+                                HasPersistentContainer &
+                                HasJsonDecoder
 
 final class AppDependencies: GeneralDependencies {
     let httpClient: HttpClientProtocol

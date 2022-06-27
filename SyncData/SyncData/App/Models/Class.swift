@@ -10,12 +10,8 @@ import CoreData
 
 class Class: NSManagedObject, Codable, Identifiable {
     @NSManaged var id: String?
-    @NSManaged var createdAt: String?
-    @NSManaged var updatedAt: String?
-    
-    @nonobjc class func fetchRequest() -> NSFetchRequest<Class> {
-        return NSFetchRequest<Class>(entityName: "Class")
-    }
+    @NSManaged var createdAt: Date?
+    @NSManaged var updatedAt: Date?
 
     enum CodingKeys: String, CodingKey {
         case id = "objectId", createdAt, updatedAt
@@ -32,8 +28,10 @@ class Class: NSManagedObject, Codable, Identifiable {
     func decode(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         id = try container.decode(String.self, forKey: .id)
-        createdAt = try container.decode(String.self, forKey: .createdAt)
-        updatedAt = try container.decode(String.self, forKey: .updatedAt)
+        let createdAtString = try container.decode(String.self, forKey: .createdAt)
+        let updatedAtString = try container.decode(String.self, forKey: .updatedAt)
+        createdAt = createdAtString.convertToDate()
+        updatedAt = updatedAtString.convertToDate()
     }
 
     func encode(to encoder: Encoder) throws {

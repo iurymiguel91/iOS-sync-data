@@ -18,10 +18,12 @@
 		A14E09EF2860018E00A97029 /* ParseAPIResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E09EE2860018E00A97029 /* ParseAPIResults.swift */; };
 		A14E09F12860070100A97029 /* SDAFParseAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E09F02860070100A97029 /* SDAFParseAPIClient.swift */; };
 		A15694BE2866AB91002AE67B /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15694BD2866AB91002AE67B /* PersistentContainer.swift */; };
+		A17A0DE42868BCA2002D690B /* HasJsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17A0DE32868BCA2002D690B /* HasJsonDecoder.swift */; };
 		A1BBE2742866820A000E9562 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBE2732866820A000E9562 /* Class.swift */; };
 		A1BBE27B286682F2000E9562 /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBE279286682F2000E9562 /* Holiday.swift */; };
 		A1BBE28128668BE3000E9562 /* CodingUserInfoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBE28028668BE3000E9562 /* CodingUserInfoKey.swift */; };
 		A1BBE28328668CE5000E9562 /* DecoderConfigurationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBE28228668CE5000E9562 /* DecoderConfigurationError.swift */; };
+		A1CAB13B28691E5A00F910D6 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CAB13A28691E5A00F910D6 /* String+Extensions.swift */; };
 		A1EAD775285FBF43007AAA28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EAD774285FBF43007AAA28 /* AppDelegate.swift */; };
 		A1EAD777285FBF43007AAA28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EAD776285FBF43007AAA28 /* SceneDelegate.swift */; };
 		A1EAD779285FBF43007AAA28 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EAD778285FBF43007AAA28 /* HomeViewController.swift */; };
@@ -70,10 +72,12 @@
 		A14E09EE2860018E00A97029 /* ParseAPIResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseAPIResults.swift; sourceTree = "<group>"; };
 		A14E09F02860070100A97029 /* SDAFParseAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDAFParseAPIClient.swift; sourceTree = "<group>"; };
 		A15694BD2866AB91002AE67B /* PersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainer.swift; sourceTree = "<group>"; };
+		A17A0DE32868BCA2002D690B /* HasJsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasJsonDecoder.swift; sourceTree = "<group>"; };
 		A1BBE2732866820A000E9562 /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
 		A1BBE279286682F2000E9562 /* Holiday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holiday.swift; sourceTree = SOURCE_ROOT; };
 		A1BBE28028668BE3000E9562 /* CodingUserInfoKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingUserInfoKey.swift; sourceTree = "<group>"; };
 		A1BBE28228668CE5000E9562 /* DecoderConfigurationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderConfigurationError.swift; sourceTree = "<group>"; };
+		A1CAB13A28691E5A00F910D6 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		A1EAD771285FBF43007AAA28 /* SyncData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SyncData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EAD774285FBF43007AAA28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1EAD776285FBF43007AAA28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -179,6 +183,8 @@
 			children = (
 				A1BBE28028668BE3000E9562 /* CodingUserInfoKey.swift */,
 				A1BBE28228668CE5000E9562 /* DecoderConfigurationError.swift */,
+				A17A0DE32868BCA2002D690B /* HasJsonDecoder.swift */,
+				A1CAB13A28691E5A00F910D6 /* String+Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -518,6 +524,7 @@
 				A1BBE27B286682F2000E9562 /* Holiday.swift in Sources */,
 				A1BBE2742866820A000E9562 /* Class.swift in Sources */,
 				A1EAD7B0285FC24B007AAA28 /* HomeModule.swift in Sources */,
+				A1CAB13B28691E5A00F910D6 /* String+Extensions.swift in Sources */,
 				A1EAD7AB285FBF90007AAA28 /* MainCoordinator.swift in Sources */,
 				A14E09E0285FEC5800A97029 /* HttpClient.swift in Sources */,
 				A1EAD779285FBF43007AAA28 /* HomeViewController.swift in Sources */,
@@ -527,6 +534,7 @@
 				A1EAD775285FBF43007AAA28 /* AppDelegate.swift in Sources */,
 				A14E09E2285FF34600A97029 /* MainModule.swift in Sources */,
 				A14E09EF2860018E00A97029 /* ParseAPIResults.swift in Sources */,
+				A17A0DE42868BCA2002D690B /* HasJsonDecoder.swift in Sources */,
 				A1BBE28128668BE3000E9562 /* CodingUserInfoKey.swift in Sources */,
 				A1EAD777285FBF43007AAA28 /* SceneDelegate.swift in Sources */,
 			);

@@ -7,6 +7,10 @@
 
 import CoreData
 
+protocol HasPersistentContainer {
+    var persistentContainer: PersistentContainerProtocol { get }
+}
+
 protocol PersistentContainerProtocol {
     var containerViewContext: NSManagedObjectContext { get }
     func saveContext(backgroundContext: NSManagedObjectContext?)
@@ -15,7 +19,7 @@ protocol PersistentContainerProtocol {
 class PersistentContainer: NSPersistentContainer, PersistentContainerProtocol {
     var containerViewContext: NSManagedObjectContext { viewContext }
     
-    func saveContext(backgroundContext: NSManagedObjectContext? = nil) {
+    func saveContext(backgroundContext: NSManagedObjectContext?) {
         let context = backgroundContext ?? viewContext
         guard context.hasChanges else { return }
         do {
@@ -23,5 +27,11 @@ class PersistentContainer: NSPersistentContainer, PersistentContainerProtocol {
         } catch let error as NSError {
             print("Error: \(error), \(error.userInfo)")
         }
+    }
+}
+
+extension PersistentContainerProtocol {
+    func saveContext(backgroundContext: NSManagedObjectContext? = nil) {
+        saveContext(backgroundContext: backgroundContext)
     }
 }

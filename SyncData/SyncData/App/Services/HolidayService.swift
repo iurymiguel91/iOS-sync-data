@@ -7,6 +7,7 @@
 
 import Alamofire
 
+typealias Dependencies = HasSDAFParseAPIClient & HasJsonDecoder
 typealias GetHolidaysCompletionHandler = (Result<ParseAPIGetResult<Holiday>, AFError>) -> Void
 
 protocol HolidayServiceProtocol {
@@ -21,10 +22,9 @@ class HolidayService: HolidayServiceProtocol {
     private let className = String(describing: Holiday.self)
     private let jsonDecoder: JSONDecoder
     
-    init(parseAPIClient: SDAFParseAPIClientProtocol,
-         jsonDecoder: JSONDecoder) {
-        self.parseAPIClient = parseAPIClient
-        self.jsonDecoder = jsonDecoder
+    init(dependencies: Dependencies) {
+        self.parseAPIClient = dependencies.parseAPIClient
+        self.jsonDecoder = dependencies.jsonDecoder
     }
     
     func getHolidays(parameters: Parameters?, completion: @escaping GetHolidaysCompletionHandler) -> Cancellable {
