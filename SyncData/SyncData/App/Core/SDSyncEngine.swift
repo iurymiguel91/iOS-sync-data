@@ -5,9 +5,7 @@
 //  Created by Iury da Rocha Miguel on 20/06/22.
 //
 
-import Foundation
 import CoreData
-import UIKit
 
 protocol SDSyncEngineProtocol {
     var registeredClassesToSync: [String] { get }
@@ -29,5 +27,12 @@ class SDSyncEngine: SDSyncEngineProtocol {
         } else {
             print("Unable to register \(className) as it is not a subclass of NSManagedObject")
         }
+    }
+    
+    func mostRecentUpdatedAtDateForEntity(withName entityName: String) {
+        let request = NSFetchRequest<NSManagedObject>(entityName: entityName)
+        request.sortDescriptors = []
+        request.fetchLimit = 1
+        
     }
 }

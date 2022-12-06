@@ -16,10 +16,6 @@ class Holiday: Class {
     @NSManaged var observedBy: Array<String>?
     @NSManaged var wikipediaLink: String?
 
-    @nonobjc class func fetchRequest() -> NSFetchRequest<Holiday> {
-        return NSFetchRequest<Holiday>(entityName: "Holiday")
-    }
-
     enum CodingKeys: CodingKey {
         case name,
              observedBy,

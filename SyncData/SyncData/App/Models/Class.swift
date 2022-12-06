@@ -8,7 +8,9 @@
 import Foundation
 import CoreData
 
-class Class: NSManagedObject, Codable, Identifiable {
+typealias Entity = NSManagedObject & Codable & Identifiable
+
+class Class: Entity {
     @NSManaged var id: String?
     @NSManaged var createdAt: Date?
     @NSManaged var updatedAt: Date?
